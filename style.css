@@ -20,7 +20,7 @@ body{
     padding: 5px 10%;
 }
 
-.logo-pagina .logo{
+.logo-pagina .logo img{
     height: 70;
     width: auto;
     transition: all 0.3s;
