@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+:root {
+    --primary-color: #D8BFD8; 
+    --secondary-color: #ffffff; 
+    --text-color: #000000; 
+  }
+  
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -12,16 +19,21 @@ body{
         background-color: #D8BFD8;
     }
 .header {
-    background-color:white;
+    background-color: white;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 85px;
-    padding: 5px 10%;
+    height: 65px;
+    padding: 0 30px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
 }
 
 .logo-pagina .logo{
-    height: 70px;
+    height: 60px;
+    margin-left: 70px; 
     width: auto;
     transition: all 0.3s;
 }
@@ -53,6 +65,77 @@ body{
     color: darkslategray;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    width: 100%;
+}
 
+/* section */
+#hero {
+    margin-top: 65px;
+    padding: 70px 0;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.hero-info h1 {
+    font-size: 48px;
+    width: 80%;
+    min-width: 500px;
+    font-weight: 800;
+    color: var(--text-black);
+}
+
+.hero-info p {
+    font-size: 14px;
+    width: 70%;
+    color: var(--text-gray);
+}
+
+.hero-info a {
+        background-color: white;
+        width: 120px;
+        padding: 8px 0;
+        border-radius: 10px;
+        font-size: 14px;
+        text-align: center;
+      
+}
+
+.hero-card {
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero-card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero-texto {
+    font-size: 16px;
+    font-weight: bolder;
+    font-style: oblique;
+    max-width: 800px;
+      
+}
 
